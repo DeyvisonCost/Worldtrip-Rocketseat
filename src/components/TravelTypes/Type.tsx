@@ -1,4 +1,5 @@
 import { Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
+import { CSSProperties } from "react";
 
 interface TypeProps {
   icon: string;

@@ -87,7 +87,7 @@ export default function Continent({ continent }: ContinentProps) {
             {continent.description}
           </Text>
 
-          <Stack align="center" justify="space-between" direction="row">
+          <Stack align="center" justify="space-between" direction="row" >
             <Box textAlign="center" m="0">
               <Heading
                 fontSize={["2xl", "5xl"]}
@@ -128,8 +128,9 @@ export default function Continent({ continent }: ContinentProps) {
                 fontWeight="500"
                 color="brand.700"
               >
-                cidades {continent.topCities - continent.cities.length}+
-                <Popover>
+                cidades 
+                {/* {continent.topCities - continent.cities.length}+ */}
+                {/* <Popover>
                   <PopoverTrigger>
                     <IconButton
                       aria-label="Information Icon"
@@ -142,6 +143,7 @@ export default function Continent({ continent }: ContinentProps) {
                         color="brand.10"
                         fontSize={14}
                         justifySelf="start"
+                        position="absolute"
                       />
                     </IconButton>
                   </PopoverTrigger>
@@ -157,7 +159,7 @@ export default function Continent({ continent }: ContinentProps) {
                       São mais de {continent.topCities} cidades
                     </PopoverBody>
                   </PopoverContent>
-                </Popover>
+                </Popover> */}
               </Text>
             </Box>
           </Stack>

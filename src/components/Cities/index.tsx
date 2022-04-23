@@ -16,9 +16,12 @@ export function Cities({ cities, topCities }: CityProps) {
   console.log(cities)
   return (
     <>
-      <Heading fontSize={["2xl", "4xl"]} fontWeight="500" mb="10">
-        Cidades +{topCities}
-      </Heading>
+    <div style={{justifyContent:"center", display: "flex" , alignItems: "center"}}>
+      
+        <Heading fontSize={["2xl", "4xl"]} fontWeight="500" mb="10" >
+          Cidades +{topCities}
+        </Heading>
+    </div>
       <Grid
         templateColumns={["1fr", "repeat(4, 1fr)"]}
         gap={["20px", "40px"]}

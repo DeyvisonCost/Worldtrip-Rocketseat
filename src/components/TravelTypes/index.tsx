@@ -5,50 +5,99 @@ import NextLink from "next/link";
 export function TravelTypes() {
   return (
     <Grid
-      templateColumns={["1fr 1fr", "repeat(5, 1fr)"]}
-      gap={[1, 5]}
+      templateColumns={["1fr 1fr", "1fr 1fr", "1fr 1fr", "repeat(5, 1fr)"]}
       w="100%"
-      maxWidth={1160}
+      justify="space-between"
+      align="center"
       mt={["10", "32"]}
       mx="auto"
+      maxWidth={1160}
+      gap={[1, 5]}
+      
     >
-      <NextLink href="continent/north-america">
-        <a>
-          <GridItem>
+      <NextLink href="continent/north-america" >
+       
+          <GridItem 
+            style={{cursor: 'pointer'}} 
+            boxShadow='xs' 
+            p='6' 
+            rounded='md' 
+            _hover={{
+                     boxShadow: "0 3px 8px 0 #00000021", 
+                     transition: " .4s"
+                    }}       
+          >
+
             <Type icon="cocktail" text="vida noturna" />
           </GridItem>
-        </a>
+        
       </NextLink>
 
       <NextLink href="continent/south-america">
-        <a>
-          <GridItem>
+        
+          <GridItem 
+            style={{cursor: 'pointer'}} 
+            boxShadow='xs' 
+            p='6' 
+            rounded='md'
+            _hover={{
+              boxShadow: "0 3px 8px 0 #00000021", 
+              transition: " .4s"
+             }}
+          >
             <Type icon="beach" text="praia" />
           </GridItem>
-        </a>
+        
       </NextLink>
 
       <NextLink href="continent/europe">
-        <a>
-          <GridItem>
+       
+          <GridItem 
+            style={{cursor: 'pointer'}} 
+            boxShadow='xs' 
+            p='6' 
+            rounded='md'
+            _hover={{
+              boxShadow: "0 3px 8px 0 #00000021", 
+              transition: " .4s"
+             }}>
             <Type icon="building" text="moderno" />
           </GridItem>
-        </a>
+        
       </NextLink>
 
       <NextLink href="continent/asia">
-        <a>
-          <GridItem>
+        
+          <GridItem 
+            style={{cursor: 'pointer'}} 
+            boxShadow='xs' 
+            p='6' 
+            rounded='md'
+            _hover={{
+              boxShadow: "0 3px 8px 0 #00000021", 
+              transition: " .4s"
+             }}
+          >
             <Type icon="museum" text="clássico" />
           </GridItem>
-        </a>
+        
       </NextLink>
-      <NextLink href="/">
-        <a>
-          <GridItem colSpan={[2, 1]}>
-            <Type icon="earth" text="e mail..." />
+      <NextLink href="/" >
+        
+          <GridItem 
+            colSpan={[2, 2, 2, 1]} 
+            style={{cursor: 'pointer'}} 
+            boxShadow='xs' 
+            p='6' 
+            rounded='md'
+            _hover={{
+              boxShadow: "0 3px 8px 0 #00000021", 
+              transition: " .4s"
+             }}
+            >
+            <Type icon="earth" text="e mail..."  />
           </GridItem>
-        </a>
+       
       </NextLink>
     </Grid>
   );
